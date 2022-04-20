@@ -2,8 +2,8 @@ import time
 def speech_recognize_continuous_from_file():
     """performs continuous speech recognition with input from an audio file"""
     # <SpeechContinuousRecognitionWithFile>
-    speech_config = speechsdk.SpeechConfig(subscription=AZURE_KEY, region='westus')
-    audio_config = speechsdk.audio.AudioConfig(filename="wikipediaOcelot.wav")
+    speech_config = speechsdk.SpeechConfig(subscription=AZURE_KEY, region=' ')
+    audio_config = speechsdk.audio.AudioConfig(filename=" .wav")
     speech_config.output_format = speechsdk.OutputFormat.Detailed
 
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
